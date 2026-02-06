@@ -1,0 +1,38 @@
+{
+  "name": "opencode-iflow-auth",
+  "version": "0.0.1",
+  "description": "Opencode plugin for Iflow authentication",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "auth",
+    "iflow"
+  ],
+  "author": "User",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^0.15.0",
+    "@types/open": "^6.1.0",
+    "open": "^11.0.0",
+    "zod": "^3.24.0"
+  },
+  "opencode": {
+    "type": "plugin",
+    "hooks": [
+      "auth"
+    ]
+  }
+}
