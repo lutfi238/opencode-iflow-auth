@@ -42,7 +42,7 @@ Add the iFlow models you want to use to the `models` array. You can configure th
       "name": "GLM-4.7 (iFlow)",
       "provider": "iflow",
       "modelId": "glm-4.7",
-      "limit": { "context": 128000, "output": 4096 },
+      "limit": { "context": 200000, "output": 128000 },
       "modalities": { "input": ["text"], "output": ["text"] }
     },
     "iflow-deepseek-v3.2": {
@@ -56,14 +56,14 @@ Add the iFlow models you want to use to the `models` array. You can configure th
       "name": "Qwen3-Coder-Plus (iFlow)",
       "provider": "iflow",
       "modelId": "qwen3-coder-plus",
-      "limit": { "context": 128000, "output": 8192 },
+      "limit": { "context": 256000, "output": 16384 },
       "modalities": { "input": ["text"], "output": ["text"] }
     },
     "iflow-kimi-k2-thinking": {
       "name": "Kimi-K2-Thinking (iFlow)",
       "provider": "iflow",
       "modelId": "kimi-k2-thinking",
-      "limit": { "context": 200000, "output": 4096 },
+      "limit": { "context": 256000, "output": 16384 },
       "modalities": { "input": ["text"], "output": ["text"] },
       "variants": {
         "thinking": { "thinkingLevel": "high" }
@@ -73,28 +73,28 @@ Add the iFlow models you want to use to the `models` array. You can configure th
       "name": "iFlow-ROME-30BA3B (Preview)",
       "provider": "iflow",
       "modelId": "iflow-rome-30ba3b",
-      "limit": { "context": 32000, "output": 4096 },
+      "limit": { "context": 256000, "output": 16384 },
       "modalities": { "input": ["text"], "output": ["text"] }
     },
     "iflow-minimax-m2.1": {
       "name": "MiniMax-M2.1 (iFlow)",
       "provider": "iflow",
       "modelId": "minimax-m2.1",
-      "limit": { "context": 128000, "output": 4096 },
+      "limit": { "context": 200000, "output": 128000 },
       "modalities": { "input": ["text"], "output": ["text"] }
     },
     "iflow-kimi-k2.5": {
       "name": "Kimi-K2.5 (iFlow)",
       "provider": "iflow",
       "modelId": "kimi-k2.5",
-      "limit": { "context": 200000, "output": 8192 },
+      "limit": { "context": 256000, "output": 16384 },
       "modalities": { "input": ["text"], "output": ["text"] }
     },
     "iflow-kimi-k2-0905": {
       "name": "Kimi-K2-0905 (iFlow)",
       "provider": "iflow",
       "modelId": "kimi-k2-0905",
-      "limit": { "context": 200000, "output": 4096 },
+      "limit": { "context": 256000, "output": 16384 },
       "modalities": { "input": ["text"], "output": ["text"] }
     }
   }
